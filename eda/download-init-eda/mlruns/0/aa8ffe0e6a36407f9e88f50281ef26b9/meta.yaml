@@ -1,0 +1,15 @@
+artifact_uri: file:///home/kaio/mlops-airbnb/eda/download-init-eda/mlruns/0/aa8ffe0e6a36407f9e88f50281ef26b9/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: aa8ffe0e6a36407f9e88f50281ef26b9
+run_uuid: aa8ffe0e6a36407f9e88f50281ef26b9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1656616459761
+status: 1
+tags: []
+user_id: kaio
