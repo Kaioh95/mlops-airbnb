@@ -4,6 +4,10 @@
 - João Vitor Dias Xavier
 - Kaio Henrique de Sousa
 
+## Link para vídeo
+
+- https://www.loom.com/share/b0b99033408149308f2d5d4103bfc81f
+
 ## Instalando o Conda
 - linux
 
@@ -38,3 +42,5 @@ Agora basta iniciar o jupyterlab digitando o seguinte comando no terminal
 ```bash
 jupyter-lab
 ```
+
+(ATENÇÃO!!! em caso de problema na instalação recomenda-se instalar os pacotes jupyterlab, scikit-learn, ipywidgets, jupyterlab_widgets individualmente)
