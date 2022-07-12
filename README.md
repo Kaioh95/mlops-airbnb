@@ -1,5 +1,9 @@
 # mlops-airbnb
 
+## Participantes
+- João Vitor Dias Xavier
+- Kaio Henrique de Sousa
+
 ## Instalando o Conda
 - linux
 
