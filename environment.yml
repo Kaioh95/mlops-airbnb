@@ -8,11 +8,11 @@ dependencies:
   - pip=21.3.1
   - matplotlib=3.5.1
   - jupyterlab=3.2.1
-	- scikit-learn=1.0.2
-	- ipywidgets=7.6.5
-	- jupyterlab_widgets=1.0.0
-	- pip:
-		- mlflow==1.14.1
-		- wandb==0.12.9
-		- protobuf==3.20.0
-      
+  - scikit-learn=1.0.2
+  - ipywidgets=7.6.5
+  - jupyterlab_widgets=1.0.0
+  - pip:
+    - mlflow==1.14.1
+    - wandb==0.12.9
+    - protobuf==3.19.0
+    - hydra-joblib-launcher==1.1.5

@@ -44,3 +44,7 @@ jupyter-lab
 ```
 
 (ATENÇÃO!!! em caso de problema na instalação recomenda-se instalar os pacotes jupyterlab, scikit-learn, ipywidgets, jupyterlab_widgets individualmente)
+
+```bash
+const install --name mlops scikit-learn=1.0.2
+```
