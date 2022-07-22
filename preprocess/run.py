@@ -54,13 +54,11 @@ def process_args(args):
            "calculated_host_listings_count_shared_rooms","reviews_per_month"]
     
     # create a dataframe from the artifact path
-    df = pd.read_csv(artifact_path,
-                    header=None,
-                    names=columns)
+    df = pd.read_csv(artifact_path)
     
     # Delete duplicated rows
-    logger.info("Dropping duplicates")
-    df.drop_duplicates(inplace=True)
+    #logger.info("Dropping duplicates")
+    #df.drop_duplicates(inplace=True)
     
     logger.info("Select Columns")
     df = df[columns]

@@ -31,6 +31,9 @@ from sklearn.metrics import confusion_matrix
 from sklearn.metrics import plot_confusion_matrix
 from sklearn.metrics import ConfusionMatrixDisplay
 from sklearn.metrics import accuracy_score
+from sklearn.metrics import mean_absolute_error
+from sklearn.metrics import mean_squared_error
+from sklearn.metrics import r2_score
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.tree import plot_tree
 
@@ -77,7 +80,7 @@ class CategoricalTransformer( BaseEstimator, TransformerMixin ):
 
         # customize feature?
         # how can I identify this one? EDA!!!!
-        if self.new_features: 
+        #if self.new_features: 
 
         ## TODO
         
@@ -165,7 +168,7 @@ def process_args(args):
 
     # Pipeline generation
     logger.info("Pipeline generation")
-    
+
     # Get the configuration for the pipeline
     with open(args.model_config) as fp:
         model_config = yaml.safe_load(fp)
@@ -221,10 +224,6 @@ def process_args(args):
     
     # Evaluation Metrics
     logger.info("Evaluation metrics")
-    
-    print("Mean Absolute Error", mean_absolute_error(y_val, predict))
-    print("Root Mean Squared Error", mean_squared_error(y_val, predict, squared=False))
-    print("R2 Score", r2_score(y_val, predict))
     
     # Metric: Mean Absolute Error
     mae = mean_absolute_error(y_val, predict)
