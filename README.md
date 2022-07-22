@@ -10,7 +10,8 @@
 
 ## Link para vídeo
 
-- https://www.loom.com/share/b0b99033408149308f2d5d4103bfc81f
+- [Vídeo antigo - Unidade 2](https://www.loom.com/share/b0b99033408149308f2d5d4103bfc81f)
+- [Vídeo novo - Unidade 3](https://www.loom.com/share/b7c32f68b5474cf7afe54d5bf704c39f)
 
 ## Instalando o Conda
 - linux
