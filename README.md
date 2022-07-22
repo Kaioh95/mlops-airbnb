@@ -1,8 +1,12 @@
 # mlops-airbnb
 
 ## Participantes
-- João Vitor Dias Xavier
-- Kaio Henrique de Sousa
+- [João Vitor Dias Xavier](https://github.com/joaovdxavier)
+- [Kaio Henrique de Sousa](https://github.com/Kaioh95)
+
+## Autor dos Scripts
+
+- [Ivanovitch Silva](https://github.com/ivanovitchm)
 
 ## Link para vídeo
 
@@ -44,7 +48,19 @@ jupyter-lab
 ```
 
 (ATENÇÃO!!! em caso de problema na instalação recomenda-se instalar os pacotes jupyterlab, scikit-learn, ipywidgets, jupyterlab_widgets individualmente)
-
+exemplo:
 ```bash
 const install --name mlops scikit-learn=1.0.2
 ```
+
+### Executing Steps
+
+este comando executa apenas o passo ``decision_tree``:
+```bash
+mlflow run . -P hydra_options="main.execute_steps='decision_tree'"
+```
+e este comando executa do passo ``download`` até o passo ``evalute``:
+```bash
+mlflow run . -P hydra_options="main.execute_steps='download,preprocess,check_data,segregate,decision_tree,evalute'"
+```
+
