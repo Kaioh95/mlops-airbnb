@@ -64,3 +64,16 @@ e este comando executa do passo ``download`` até o passo ``evalute``:
 mlflow run . -P hydra_options="main.execute_steps='download,preprocess,check_data,segregate,decision_tree,evalute'"
 ```
 
+### Excluido ambientes criados pelo mlflow
+
+listando ambientes criados
+```bash
+conda info --envs | grep mlflow | cut -f1 -d" "
+```
+
+comando para excluir ambientes criados
+```bash
+for e in $(conda info --envs | grep mlflow | cut -f1 -d" "); do conda uninstall --name $e --all -y;done
+```
+
+
