@@ -1,7 +1,0 @@
-name: data_checks_eda
-conda_env: conda.yml
-
-entry_points:
-  main:
-    command: >-
-      jupyter-lab
